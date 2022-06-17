@@ -53,8 +53,25 @@ body {
 .divButtonsAreaPontos{
     margin-top: 2%;
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border-style: solid;
     border-color: #2B26C1;
     border-width: 5px 0 5px 0;
     outline: solid 5px #2663E5;
+}
+.divImgHolder img{
+    margin-top: -50px;
+    transition: transform 0.2s ease-in-out;
+}
+.divImgHolder:hover img{
+    transform: scale(1.1);
+}
+#cardPasseio img{
+    margin-top: -100px;
+}
+#cardOpera img{
+    margin-top: 0;
 }
