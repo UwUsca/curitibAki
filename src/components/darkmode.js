@@ -50,7 +50,7 @@ function ChangeTheme(){
                 }
             }
 
-        }, 1)
+        }, 0)
     }
 
     getTheme();

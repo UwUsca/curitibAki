@@ -20,7 +20,7 @@ function Emergencia(){
             </div>
             <div className="divButtonsAreaPontos">
                 {pText("outros")}
-                {ButtonsHome("/emergencias","Emergencia","Números de Emergência","buttonHospital")}
+                {ButtonsHome("/pontosturisticos","Curitiba","Pontos Turisticos","buttonPontos")}
                 {ButtonsHome("/faq","Perguntas","Perguntas Frequentes","buttonFaq")}
             </div>
         </div>

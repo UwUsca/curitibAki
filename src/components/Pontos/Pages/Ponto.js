@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from "react";
 import LogoPqno from "../../LogoPqno";
 import PontoConteudo from "./PontoTexto";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faStar as estrelaCheia} from "@fortawesome/free-solid-svg-icons"
-import { faStar as estrelaVazia} from "@fortawesome/free-regular-svg-icons"
+import {faStar} from "@fortawesome/free-solid-svg-icons"
+import { faFaceFrown, faFaceFrownOpen, faFaceMeh, faFaceSmile, faFaceGrinStars} from "@fortawesome/free-regular-svg-icons"
 import { initializeApp } from "firebase/app";
 import { getDocs, getFirestore, collection, addDoc, doc, deleteDoc} from "firebase/firestore";
 import { app } from "../../../services/firebaseConfig";
@@ -33,8 +33,6 @@ import ShopPalladium from "../../CssPages/Images/pontos/shop-palladium.jpg"
 function Ponto(page){
 
     var Imagem; var NomeLugar; var Local;
-
-
 
     const [name, setName] = useState("")
     const [avaliacao, setAvaliacao] = useState("")
@@ -147,9 +145,13 @@ function Ponto(page){
     const avaliarArea = {
         textAlign: "center",
         maxWidth: "100%",
-        backgroundColor: "#ffffff0D",
+        backgroundColor: "rgb(28,28,28,0.5)",
         padding: "10px 20px 20px 20px",
         borderRadius: "15px",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        flexDirection: "column"
     }
     
     switch(page){
@@ -264,35 +266,37 @@ function Ponto(page){
             </div>
             <div className="starsArea" style={textSobre}>
                 <div style={avaliarArea}>
-                    <h2><FontAwesomeIcon icon={estrelaCheia} /> VISITOU? AVALIE! <FontAwesomeIcon icon={estrelaCheia} /></h2>
-                    <button onClick={avaliar}>
-                        <FontAwesomeIcon icon={estrelaCheia} />
-                    </button>
-                    <button onClick={avaliar2}>
-                        <FontAwesomeIcon icon={estrelaCheia} />
-                    </button>
-                    <button onClick={avaliar3}>
-                        <FontAwesomeIcon icon={estrelaCheia} />
-                    </button>
-                    <button onClick={avaliar4}>
-                        <FontAwesomeIcon icon={estrelaCheia} />
-                    </button>
-                    <button onClick={avaliar5}>
-                        <FontAwesomeIcon icon={estrelaCheia} />
-                    </button>
-                    <div>
-                        <ul>
+                    <h2><FontAwesomeIcon icon={faStar} /> VISITOU? AVALIE! <FontAwesomeIcon icon={faStar} /></h2>
+                    <div style={{display:"flex", gap:"5px"}}>
+                        <button className="buttonAvaliar" style={{backgroundColor:"rgba(255,10,10,0.7)"}} onClick={avaliar}>
+                            <FontAwesomeIcon icon={faFaceFrown}/>
+                        </button>
+                        <button className="buttonAvaliar" style={{backgroundColor:"rgba(242,206,2,0.7)"}} onClick={avaliar2}>
+                            <FontAwesomeIcon icon={faFaceFrownOpen} />
+                        </button>
+                        <button className="buttonAvaliar" style={{backgroundColor:"rgba(235,255,10,0.7)"}} onClick={avaliar3}>
+                            <FontAwesomeIcon icon={faFaceMeh} />
+                        </button>
+                        <button className="buttonAvaliar" style={{backgroundColor:"rgba(133,230,44,0.7)"}} onClick={avaliar4}>
+                            <FontAwesomeIcon icon={faFaceSmile} />
+                        </button>
+                        <button className="buttonAvaliar" style={{backgroundColor:"rgba(32,156,5,0.7)"}} onClick={avaliar5}>
+                            <FontAwesomeIcon icon={faFaceGrinStars} />
+                        </button>
+                    </div>
+                    <div style={{maxWidth: "50%", marginTop: "15px"}}>
+                        <tr>
                             {users.map((user) => {
                                 return (
                                     <div key={user.id}>
-                                        <li>
-                                            {user.name}, {user.avaliacao} 
-                                        </li>
-                                        <button onClick={()=> deletar(user.id)}>Deletar</button>
+                                        <td style={{marginLeft: "20px"}}>
+                                            {user.name}:  {user.avaliacao}  <button style={{fontSize: "20px", height: "20px", backgroundColor: "rgb(28,28,28,0)", color: "#f55e53", border: "none", borderRadius: "100%"}} onClick={()=> deletar(user.id)}>x</button>
+                                        </td>
+                                        
                                     </div>
                                 )
                             })}
-                        </ul>
+                        </tr>
                     </div>
                 </div>
             </div>

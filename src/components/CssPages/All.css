@@ -111,3 +111,15 @@ iframe {
     font-size: 45px;
     margin: 0;
 }
+.buttonAvaliar{
+    height: 50px;
+    width: 50px;
+    font-size: 35px;
+    background-color: none;
+    border: none;
+    border-radius: 100%;
+}
+.buttonAvaliar:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px #fff,
+}
