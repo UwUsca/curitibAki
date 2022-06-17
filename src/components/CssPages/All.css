@@ -1,0 +1,60 @@
+html, #app{
+    height: 100%;
+    width: 100%;
+  }
+body {
+    margin: 0%;
+    background-color: #131313;
+    /*Modo claro: #f2f3f4; Modo escuro: #121212;*/
+}
+
+@font-face {
+    font-family: fontCards;
+    src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: fontTextPontos;
+    src: url(Arvo-Regular.ttf);
+}
+.divBackground {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#logoIndex:hover img{
+    transform: scale(1.05);
+}
+.divButtonsArea {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS BUTTONS HOME */
+.divButtons:hover img {
+    opacity: 40% !important;
+    transform: scale(1.05);   
+}
+.divButtons div {
+    transition: transform 0.1s ease-in-out;  
+}
+.divButtons:hover div {
+    transform: scale(1.05);   
+}
+#buttonHospital img {
+    object-position: 0 0;
+}
+
+/* CSS PONTOS */
+.divButtonsAreaPontos{
+    margin-top: 2%;
+    width: 100%;
+    border-style: solid;
+    border-color: #2B26C1;
+    border-width: 5px 0 5px 0;
+    outline: solid 5px #2663E5;
+}

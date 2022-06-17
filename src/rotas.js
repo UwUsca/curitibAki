@@ -1,12 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
-import Home from "./components/Home/Home";
+import Home from "./pages/Home";
+import Pontos from "./pages/Pontos";
+import Emergencia from "./pages/Emergencia";
+import Faq from "./pages/Faq";
 
 function Rotas(){
     return <Router>
         <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/pontosturisticos" element={<Pontos/>}/>
+            <Route path="/emergencias" element={<Emergencia/>}/>
+            <Route path="/faq" element={<Faq/>}/>
+            <Route path="*" element={<Home/>}/>
         </Routes>
     </Router>
 }
