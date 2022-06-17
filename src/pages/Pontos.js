@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "../components/Logo";
 import Card from "../components/Pontos/Card";
 import pText from "../components/Pontos/pText";
+import ButtonsHome from "../components/Home/buttonsHome";
 
 function Pontos(){
     return(
@@ -32,7 +33,11 @@ function Pontos(){
                 {Card("ShopBarigui","park shopping curitiba","shoppingpark","cardPark")}
                 {Card("ShopJockey","jockey plaza shopping","shoppingjockey","cardJockey")}
                 {Card("ShopBatel","pátio batel","shoppingbatel","cardBatel")}
-                
+            </div>
+            <div className="divButtonsAreaPontos">
+                {pText("outros")}
+                {ButtonsHome("/emergencias","Emergencia","Números de Emergência","buttonHospital")}
+                {ButtonsHome("/faq","Perguntas","Perguntas Frequentes","buttonFaq")}
             </div>
         </div>
     )
