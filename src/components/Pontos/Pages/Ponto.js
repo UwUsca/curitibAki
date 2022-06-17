@@ -249,7 +249,7 @@ function Ponto(page){
             break;
         case("shoppingbatel"):
             Imagem = ShopBatel;
-            NomeLugar = "Shopping Batel"
+            NomeLugar = "Pátio Batel"
             Local = "shoppingbatel"
             break;
     }

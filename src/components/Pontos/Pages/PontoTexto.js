@@ -258,6 +258,7 @@ function PontoConteudo(Local){
                     </div>
             )
 
+
         case("parquesaolourenco"):
             return(
                 <div className="textSobre" style={textSobre}>
@@ -286,16 +287,22 @@ function PontoConteudo(Local){
                         </div>
                     </div>
             )
-        case("centrohistorico"):
+        case("parquebarigui"):
             return(
                 <div className="textSobre" style={textSobre}>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
                                 <p>
-                                Conjunto das mais antigas edificações da cidade, delimitado por decreto municipal de 1971. Entre essas construções estão a Casa Romário Martins, do século XVIII e a Igreja da Ordem Terceira de São Francisco, de 1737, além dos exemplares arquitetônicos de inspiração alemã, datados da segunda metade do século XIX.
-                                <br></br><br></br>
-                                Nas manhãs de domingo, as velhas pedras do Largo da Ordem e o calçadão de acesso à Praça Garibaldi, com a Igreja do Rosário, o Relógio das Flores, a Fonte da Memória e a Società Giuseppe Garibaldi, formam o cenário da Feira de Artesanato, animado ponto de encontro com música ao vivo.
-                                </p>
+                                O Barigui, maior parque de Curitiba, ocupa 140 hectares do território de quatro bairros e fica aberto ininterruptamente, todos os dias do ano. É imbatível na preferência dos curitibanos – mesmo em dias de garoa e neblina - para desfrutar da natureza, fazer passeios, e principalmente para atividades esportivas.
+<br></br><br></br>
+Tanta regularidade na frequência explica-se porque o parque tem uma localização próxima ao centro, um relevo interessante cercado de bela paisagem (com árvores, flores, lago, cidade ao fundo, que vão se revezando em todo seu circuito de mais de 3 km), e ainda porque disponibiliza os mais diferentes equipamentos aos seus usuários.  
+<br></br><br></br>
+O lugar, uma antiga área de terras (sesmaria) pertencente ao desbravador Mateus Martins Leme, foi transformado em parque, em 1972, pelo então prefeito Jaime Lerner. O nome Barigui tem origem indígena e significa "rio do fruto espinhoso", em alusão às pinhas das araucárias nativas, ainda encontradas por ali.
+<br></br><br></br>
+Seus 140 hectares abrigam três bosques, com vegetação constituída por capões de floresta primária nativa e por florestas secundárias, presentes a erva-mate, canelas, aroeiras, bromélias e orquídeas, que servem de refúgio para animais (como preás e gambás) e ajudam a regular a qualidade do ar.
+<br></br><br></br>
+O imenso lago, com 230.000m2, ajuda a conter as enchentes do Rio Barigui, tão comuns antigamente, e é por onde deslizam patinhos e marrecos, e as garças-brancas buscam alimento em suas margens, até que volte a ser período de migração.  
+                               </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
@@ -305,88 +312,296 @@ function PontoConteudo(Local){
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d900.8267593640647!2d-49.2724789!3d-25.4279966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce412451404e7%3A0x1fb057edfa6cad72!2sCentro%20Hist%C3%B3rico%20de%20Curitiba%20Largo%20da%20Ordem!5e0!3m2!1spt-BR!2sbr!4v1654130275785!5m2!1spt-BR!2sbr"></iframe>
-                            <p>Rua José Bonifácio, 33 – Centro <br></br>
-                                CEP 82510-070 – Curitiba/PR<br></br>
-                                Fone: 55 41 3350-8484</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2142.6201953496675!2d-49.307009168213426!3d-25.423439484657152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce3df88cb5fa7%3A0x64ed421a45cf1e53!2sParque%20Barigui!5e0!3m2!1spt-BR!2sbr!4v1655492882647!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Av. Cândido Hartmann, S/N - Bigorrilho<br></br>
+                             CEP: 82025-160 - Curitiba - PR <br></br>
+                             Fone: 55 41 3350-9891
+                             </p>
                         </div>
                     </div>
             )
-        case("centrohistorico"):
+        case("parquetingui"):
             return(
                 <div className="textSobre" style={textSobre}>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
                                 <p>
-                                Conjunto das mais antigas edificações da cidade, delimitado por decreto municipal de 1971. Entre essas construções estão a Casa Romário Martins, do século XVIII e a Igreja da Ordem Terceira de São Francisco, de 1737, além dos exemplares arquitetônicos de inspiração alemã, datados da segunda metade do século XIX.
-                                <br></br><br></br>
-                                Nas manhãs de domingo, as velhas pedras do Largo da Ordem e o calçadão de acesso à Praça Garibaldi, com a Igreja do Rosário, o Relógio das Flores, a Fonte da Memória e a Società Giuseppe Garibaldi, formam o cenário da Feira de Artesanato, animado ponto de encontro com música ao vivo.
-                                </p>
+                                O Parque Tingui reúne em sua área a Praça Brasil 500 Anos, que celebra a chegada dos portugueses ao país, e o Memorial Ucraniano, em homenagem aos imigrantes desta que é uma etnia com marcante presença em Curitiba.   
+<br></br><br></br>
+A Praça Brasil 500 Anos, inaugurada em 19 de abril de 2000, em comemoração aos 500 anos do descobrimento do Brasil, foi revitalizada em 2021. Com o formato de um disco de 15 metros de diâmetro e a rosa dos ventos, o espaço destaca a importância dos antigos descobridores, exemplos de conhecimento, ousadia, coragem e espírito empreendedor.
+<br></br><br></br>
+Às véspera dos 199 anos da Independência do Brasil, em 7 setembro, a praça ganhou novo paisagismo, reforma das estruturas, recuperação do seu calçamento e do alto mastro para hasteamento da bandeira. Uma estátua de Tindiquera, cacique da tribo tingui – que deu nome ao parque – deixou uma das entradas e foi instalada na praça, passando a representar o povo que primeiro habitou não só a região de Curitiba, mas o território nacional.
+                                    </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
                                 <p>
-                                Aberto 24 horas
+                                Segunda à domingo: 6h às 20h
                                 </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d900.8267593640647!2d-49.2724789!3d-25.4279966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce412451404e7%3A0x1fb057edfa6cad72!2sCentro%20Hist%C3%B3rico%20de%20Curitiba%20Largo%20da%20Ordem!5e0!3m2!1spt-BR!2sbr!4v1654130275785!5m2!1spt-BR!2sbr"></iframe>
-                            <p>Rua José Bonifácio, 33 – Centro <br></br>
-                                CEP 82510-070 – Curitiba/PR<br></br>
-                                Fone: 55 41 3350-8484</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.073885254126!2d-49.30934043470185!3d-25.402337286034026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce11863885b9b%3A0x106542d72278f3e!2sParque%20Municipal%20Tingui%20-%20Memorial%20Ucraniano!5e0!3m2!1spt-BR!2sbr!4v1655493072470!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Av. Fredolin Wolf, 1870 - Pilarzinho<br></br>
+                                CEP 82030-600 – Curitiba/PR<br></br>
+                                Fone: 55 41 3338-1442</p>
                         </div>
                     </div>
             )
-        case("centrohistorico"):
+        case("bosquealemao"):
             return(
                 <div className="textSobre" style={textSobre}>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
                                 <p>
-                                Conjunto das mais antigas edificações da cidade, delimitado por decreto municipal de 1971. Entre essas construções estão a Casa Romário Martins, do século XVIII e a Igreja da Ordem Terceira de São Francisco, de 1737, além dos exemplares arquitetônicos de inspiração alemã, datados da segunda metade do século XIX.
-                                <br></br><br></br>
-                                Nas manhãs de domingo, as velhas pedras do Largo da Ordem e o calçadão de acesso à Praça Garibaldi, com a Igreja do Rosário, o Relógio das Flores, a Fonte da Memória e a Società Giuseppe Garibaldi, formam o cenário da Feira de Artesanato, animado ponto de encontro com música ao vivo.
+                                O Bosque Alemão, antiga chácara da família Schaffer com 38 mil m² de área, foi inaugurado em 1996 na cidade de Curitiba, capital do estado brasileiro do Paraná. Localiza-se no bairro Vista Alegre e é formado por mata nativa densa.
                                 </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
                                 <p>
-                                Aberto 24 horas
+                                Todos os dias: 8h às 20h
                                 </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d900.8267593640647!2d-49.2724789!3d-25.4279966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce412451404e7%3A0x1fb057edfa6cad72!2sCentro%20Hist%C3%B3rico%20de%20Curitiba%20Largo%20da%20Ordem!5e0!3m2!1spt-BR!2sbr!4v1654130275785!5m2!1spt-BR!2sbr"></iframe>
-                            <p>Rua José Bonifácio, 33 – Centro <br></br>
-                                CEP 82510-070 – Curitiba/PR<br></br>
-                                Fone: 55 41 3350-8484</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3604.0104039360062!2d-49.290310048868506!3d-25.404462338027642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dcfb07d9d589c5%3A0x60ee41a3bc9704d0!2sBosque%20Alem%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1655493297242!5m2!1spt-BR!2sbr"></iframe>
+                            <p>R. Nicolo Paganini, s/n - Pilarzinho<br></br>
+                                CEP 81720-300 – Curitiba/PR<br></br>
+                                Fone: 55 41 3568-1087</p>
                         </div>
                     </div>
             )
-        case("centrohistorico"):
+        case("bosquepapajoaopauloii"):
             return(
                 <div className="textSobre" style={textSobre}>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
                                 <p>
-                                Conjunto das mais antigas edificações da cidade, delimitado por decreto municipal de 1971. Entre essas construções estão a Casa Romário Martins, do século XVIII e a Igreja da Ordem Terceira de São Francisco, de 1737, além dos exemplares arquitetônicos de inspiração alemã, datados da segunda metade do século XIX.
-                                <br></br><br></br>
-                                Nas manhãs de domingo, as velhas pedras do Largo da Ordem e o calçadão de acesso à Praça Garibaldi, com a Igreja do Rosário, o Relógio das Flores, a Fonte da Memória e a Società Giuseppe Garibaldi, formam o cenário da Feira de Artesanato, animado ponto de encontro com música ao vivo.
+                                Também chamado de Bosque do Papa, pelos curitibanos, a área integra beleza e tradição, em harmonia com a natureza, e representa o agradecimento da cidade à presença do imigrante polonês e todo o seu significado, a partir de 1871.
+<br></br><br></br>
+Em comemoração aos 150 anos da chegada das primeiras famílias a Curitiba, o Memorial da Imigração Polonesa, formado por casas de troncos de pinheiros encaixados, típicos daquele país, e dispostas em forma de aldeia, tem novas atrações. As casas, construídas por vota de 1878, foram remontadas naquele espaço, quando da implantação do Bosque.
+<br></br><br></br>
+Nelas os visitantes encontram (desde 10 de outubro de 2021) o testemunho da história que teve início com 34 famílias, vindas da região da Silésia, no bairro Pilarzinho. Usos e costumes estão registrados em fotografias, documentos e objetos que integram os acervos do Museu Paranaense e do Arquivo Público do Estado do Paraná. A exposição, que vai até dezembro de 2022, conta com uma coleção de trajes típicos, especialmente cedida por particular. Os oito manequins têm belas vestimentas coloridas, que representam diferentes regiões da Polônia. O Memorial é coordenado pela Fundação Cultural de Curitiba - FCC e a Associação Cultural Brasil-Polônia - BRASPOL. 
                                 </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
                                 <p>
-                                Aberto 24 horas
+                                Todos os dias: 6h às 18h
                                 </p>
                         </div>
                         <div style={textBlock}>
                             <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d900.8267593640647!2d-49.2724789!3d-25.4279966!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce412451404e7%3A0x1fb057edfa6cad72!2sCentro%20Hist%C3%B3rico%20de%20Curitiba%20Largo%20da%20Ordem!5e0!3m2!1spt-BR!2sbr!4v1654130275785!5m2!1spt-BR!2sbr"></iframe>
-                            <p>Rua José Bonifácio, 33 – Centro <br></br>
-                                CEP 82510-070 – Curitiba/PR<br></br>
-                                Fone: 55 41 3350-8484</p>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14415.522069980572!2d-49.2702598!3d-25.4088098!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x86c500c629ec8e8e!2sBosque%20Papa%20Jo%C3%A3o%20Paulo%20II!5e0!3m2!1spt-BR!2sbr!4v1655493424149!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Rua Wellington de Oliveira Viana, 33 - Centro Cívico <br></br>
+                                CEP 80540-310 – Curitiba/PR<br></br>
+                                Fone: 55 41 3313-7194</p>
+                        </div>
+                    </div>
+            )
+
+        case("shoppingpalladium"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                O shopping conta com mais de 350 lojas, sendo 20 lojas-âncora, cerca de 80 quiosques, um charmoso Boulevard com 8 restaurantes – cada um deles com capacidade para acolher 150 pessoas – mais 4 restaurantes e outras 26 opções de fast-food para atender a todos os gostos, numa imensa Praça de Alimentação, com mais de 1.200 lugares sentados.
+                                <br></br><br></br>
+Tudo foi minuciosamente pensado para garantir que os mais de 1,5 milhão de consumidores que passam por aqui todo mês, sintam-se como se estivessem em casa, com a maior variedade em opções de compras, alimentação, serviços e lazer da cidade. As lojas-âncora do Shopping Palladium Curitiba são 20 grandes marcas, que completam o maior e melhor mix de lojas de Curitiba.
+<br></br><br></br>
+O empreendimento tem uma área construída de 154.600 m², conta com 18 escadas rolantes, 13 elevadores e três amplos pisos de estacionamento (além de área descoberta) para 20 mil veículos/dia. O Shopping possui um fluxo de 1,5 milhão de consumidores mês. No entorno do shopping circulam, por dia, mais de 80 mil veículos, além de 4.200 ônibus/dia.
+<br></br><br></br>
+Imagine um espaço em Curitiba, onde você possa encontrar tudo o que você desejar em compras, lazer e serviços. Não precisa imaginar mais! O Shopping Palladium Curitiba é um shopping multiuso, conta com uma estrutura ampla, moderna e inteligente, pensada e construída para você.
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas: <br></br>
+                                Segunda à Sexta: 11h às 23h<br></br>
+                                Sábado: 10h às 22h<br></br>
+                                Domingo: 14h às 20h<br></br>
+                                <br></br><br></br>
+                                Alimentação: <br></br>
+                                Segunda à Sexta: 11h às 23h<br></br>
+                                Sábado: 10h às 23h<br></br>
+                                Domingo: 11h às 22h
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.8179709670917!2d-49.2909558!3d-25.477752999999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce35db9b9dc5b%3A0xb729c0f7d53a01ac!2sAv.%20Pres.%20Kennedy%2C%204121%20-%20Port%C3%A3o%2C%20Curitiba%20-%20PR%2C%2080610-270!5e0!3m2!1spt-BR!2sbr!4v1655493717307!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Av. Pres. Kennedy, 4121 - Portão<br></br>
+                                 CEP 80610-270 – Curitiba/PR<br></br>
+                                Fone: 55 41 3212-3500</p>
+                        </div>
+                    </div>
+            )
+        case("shoppingcuritiba"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                Inaugurado em 25 de setembro de 1996, localizado no antigo imóvel militar do século XIX, o Shopping Curitiba é um dos shoppings mais queridos pelo público curitibano. Em 2007, um grande processo de revitalização se iniciou para deixá-lo ainda melhor. O Curitiba é o shopping mais prático, rápido e bem organizado da cidade, que oferece tudo o que você precisa com a satisfação de ter feito as escolhas certas em um ambiente agradável, onde você sempre se sente à vontade. Cerca de 9 milhões de pessoas passam pelo Shopping Curitiba no ano, 750 mil ao mês, o equivalente a metade da população de Curitiba! Seja muito bem-vindo!                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas: <br></br>
+                                Segunda a Sábado: 10h às 22h<br></br>
+                                Domingo: 14h às 20h
+                                <br></br><br></br>
+                                Alimentação: <br></br>
+                                Segunda a Domingo: 10h às 22h
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14411.67384912826!2d-49.2773706!3d-25.4409894!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89a919fef0a7fb10!2sShopping%20Curitiba!5e0!3m2!1spt-BR!2sbr!4v1655493922651!5m2!1spt-BR!2sbr"></iframe>
+                            <p>R. Brg. Franco, 2300 - Centro<br></br>
+                                CEP 80250-030 – Curitiba/PR<br></br>
+                                Fone: 55 41 3026-1000</p>
+                        </div>
+                    </div>
+            )
+        case("shoppingestacao"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                O Shopping Estação foi inaugurado em 14 de novembro de 1997 em prédio anexo ao Museu Ferroviário, que reúne a memória sobre a antiga estação ferroviária de Curitiba, atraindo o público com uma extensa lista de atrações para o curitibano. Localizado em região central e cercado por grandes avenidas, o empreendimento tornou-se referência na cidade.
+<br></br>Passou pela sua primeira expansão e revitalização em 2002, agregando operações de peso como Renner, Riachuelo, Americanas e Marisa. Em 2007 foi adquirido pelo grupo BRMALLS, maior empresa de shopping centers do país, passando por um processo constante de qualificação. Atualmente opera como centro de compras sem perder sua herança de lazer, apresentando diversas opções para o entretenimento em família e amigos.                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas: <br></br>
+                                Segunda a Sábado: 10h às 22h<br></br>
+                                Domingo: 14h às 20h
+                                <br></br><br></br>
+                                Alimentação: <br></br>
+                                Segunda a Quinta: 10h às 22h
+                                Sexta e Sábado: 10h às 23h
+                                Domingo: 11h às 22h
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14412.012411212287!2d-49.2673983!3d-25.4381598!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4f96264373029feb!2zU2hvcHBpbmcgRXN0YcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1655494134081!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Av. Sete de Setembro, 2775 - Rebouças<br></br> 
+                                CEP 80230-010 – Curitiba/PR<br></br>
+                                Fone: 55 41 3094-5300</p>
+                        </div>
+                    </div>
+            )
+        case("shoppingpark"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                Com mais de 300 lojas nacionais e internacionais, você tem bons motivos para fazer ser incrível o seu Dia das Mães, Dia dos Pais, Dia dos Namorados, ou até aquela data que você adora: o Dia Em Que Eu Me Presenteio.
+                                <br></br><br></br>
+Você também pode fazer uma tarde entre amigos ser realmente incrível no PKB.
+<br></br><br></br>
+Se isso tudo já traz novos sabores para o seu dia, espere até passar pela Praça de Alimentação e pelos restaurantes do Park Gourmet. Você vai viver uma experiência gastronômica incrivelmente completa.
+<br></br><br></br>
+Mas para ter certeza de que o ParkShoppingBarigüi foi cuidadosamente pensado para quebrar sua rotina com detalhes incríveis, repare na iluminação natural, nos 23 mil m2 de mata nativa preservada, nos lounges para descanso e na comodidade de serviços como: Concierge, Espaço Família e Banheiro Teen.
+<br></br><br></br>
+Agora, se você quer se sentir ainda mais perto do shopping que já faz parte da sua vida, descubra as vantagens do nosso programa de relacionamento, o MultiVocê. Ao participar do programa, você terá acesso a benefícios exclusivos para transformar os passeios no PkB em experiências ainda mais incríveis.                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas: <br></br>
+                                Segunda a Sábado: 10h às 22h<br></br>
+                                Domingo: 12h às 20h
+                                <br></br><br></br>
+                                Alimentação: <br></br>
+                                Segunda a Sábado: 10h às 22h
+                                Domingo: 12h às 20h
+                                </p> 
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14412.33548171653!2d-49.3160701!3d-25.4354594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1c5a176a37a77a48!2sParkShoppingBarig%C3%BCi!5e0!3m2!1spt-BR!2sbr!4v1655494309680!5m2!1spt-BR!2sbr"></iframe>
+                            <p>R. Prof. Pedro Viriato Parigot de Souza, 600 - Mossunguê<br></br>
+                                CEP 81200-100 – Curitiba/PR<br></br>
+                                Fone: 55 41 3317-6150</p>
+                        </div>
+                    </div>
+            )
+        case("shoppingjockey"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                Um mix completo de lojas, com marcas inéditas e internacionais e uma vasta opção gastronômica fazem do Jockey Plaza Shopping um empreendimento único.
+                                <br></br><br></br>
+Inaugurado no dia 5 de junho de 2019, o grandioso shopping center possui mais de 200 mil m² de área construída e comporta mais de 400 lojas e 30 opções na praça de alimentação, além de um boulevard gastronômico com oito restaurantes e vista panorâmica para a pista de corridas do Jockey Club do Paraná.
+<br></br><br></br>
+Para quem busca diversão um espaço para jogos e lazer, o complexo Cinépolis oferece cinco salas tradicionais Multiplex Stadium, uma sala Macro XE (maior sala de cinema de Curitiba) e duas salas VIPs garantem a diversão e tornam o Jockey Plaza Shopping ainda mais completo.
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas: <br></br>
+                                Segunda a Sexta: 11h às 23h<br></br>
+                                Sábado: 10h às 22h<br></br>
+                                Domingo/Feriados: 14h às 20h
+                                <br></br><br></br>
+                                Alimentação: <br></br>
+                                Segunda a Sexta: 11h às 23h
+                                Sábado: 10h às 23h
+                                Domingo: 11h às 22h
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14413.147371438901!2d-49.2147448!3d-25.428672!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5323193c213574c2!2sJockey%20Plaza%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1655494489341!5m2!1spt-BR!2sbr"></iframe>
+                            <p>R. Konrad Adenauer, 370 - Tarumã<br></br>
+                                CEP 82821-020 – Curitiba/PR<br></br>
+                                Fone: 55 41 3216-1600</p>
+                        </div>
+                    </div>
+            )
+        case("shoppingbatel"):
+            return(
+                <div className="textSobre" style={textSobre}>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faCircleInfo}/> SOBRE O LOCAL</h2>
+                                <p>
+                                Entretenimento, cultura, lazer e compras em um lugar único inspirado no charme da inovação curitibana. Pátio Batel é Grupo Soifer.
+                                <br></br><br></br>
+O Pátio Batel é um centro de compras inovador projetado para proporcionar memórias inesquecíveis ao exigente mercado curitibano: entretenimento, lazer, cultura e marcas nacionais e internacionais – algumas inéditas e exclusivas na Região Sul do país.
+<br></br><br></br>
+E essa nova experiência também é possível graças a sua arquitetura contemporânea e elegante, marcada por um grande vão central que une os ambientes internos. O charme da iluminação natural encontra o aconchego das áreas verdes a céu aberto e dos espaços de convivência em um projeto compacto distribuído em nove pavimentos. Definitivamente uma nova experiência.
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faClock}/> HORÁRIOS</h2>
+                                <p>
+                                Lojas:<br></br>
+                                Segunda a sábado: 10h às 22h <br></br>
+                                Domingos/feriados: 14h às 20h
+                                <br></br><br></br>
+                                Restaurantes:<br></br>
+                                Segunda a sábado: 10h às 22h<br></br>
+                                Domingos e feriados: 11h às 22h
+                                </p>
+                        </div>
+                        <div style={textBlock}>
+                            <h2><FontAwesomeIcon icon={faMap}/> COMO CHEGAR</h2>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7205.856991702983!2d-49.29160587483103!3d-25.44065398513389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce38ee8c33a55%3A0x495f31d65af081a6!2sP%C3%A1tio%20Batel!5e0!3m2!1spt-BR!2sbr!4v1655494755133!5m2!1spt-BR!2sbr"></iframe>
+                            <p>Av. do Batel, 1868 - Batel<br></br> , Curitiba - PR, 
+                                CEP 80420-090 – Curitiba/PR<br></br>
+                                Fone: 55 41 3069-8301</p>
                         </div>
                     </div>
             )

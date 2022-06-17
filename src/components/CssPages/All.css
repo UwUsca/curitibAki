@@ -123,3 +123,31 @@ iframe {
     cursor: pointer;
     box-shadow: 0px 0px 5px #fff,
 }
+
+/*CSS FAQ*/
+.areaPerguntas{
+    width: 95%;
+    background-color: rgb(28,28,28,0.5);
+    font-family: fontTextPontos;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+.pergunta{
+    width: 85%;
+    text-justify: auto;
+    font-size: 15px;
+}
+.resposta{
+    width: 85%;
+    text-justify: auto;
+    font-size: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15px;
+}

@@ -31,7 +31,7 @@ const buttonLogin = {
   fontSize: "17px",
   border: "none",
   borderRadius: "10px",
-  backgroundColor: "rgb(28,28,28,0.5)",
+  backgroundColor: "rgba(28,28,28,0.5)",
   fontFamily: "fontTextPontos",
   display: "flex",
   justifyContent: "center", 
