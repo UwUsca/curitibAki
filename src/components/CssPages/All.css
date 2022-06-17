@@ -1,0 +1,55 @@
+html {height: 100%;}body {height: 100%;}
+div#root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px;
+}div.app {height: 100%;}
+body {
+    background-color: #131313;
+    margin: 0%;
+    /*Modo claro: #f2f3f4; Modo escuro: #121212;*/
+}
+@font-face {
+    font-family: fontCards;
+    src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: fontTextPontos;
+    src: url(Arvo-Regular.ttf);
+}
+.divBackground {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4em;
+}
+#logoIndex:hover img{
+    transform: scale(1.05);
+}
+.divButtonsArea {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CSS BUTTONS HOME */
+.divButtons:hover img {
+    opacity: 40% !important;
+    transform: scale(1.05);   
+}
+.divButtons div {
+    transition: transform 0.1s ease-in-out;  
+}
+.divButtons:hover div {
+    transform: scale(1.15);   
+}
+#buttonHospital img {
+    object-position: 0 0;
+}
