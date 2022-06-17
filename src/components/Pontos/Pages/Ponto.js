@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext, useEffect, useState } from "react";
 import LogoPqno from "../../LogoPqno";
 import PontoConteudo from "./PontoTexto";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar as estrelaCheia} from "@fortawesome/free-solid-svg-icons"
 import { faStar as estrelaVazia} from "@fortawesome/free-regular-svg-icons"
+import { initializeApp } from "firebase/app";
+import { getDocs, getFirestore, collection, addDoc, doc, deleteDoc} from "firebase/firestore";
+import { app } from "../../../services/firebaseConfig";
+import { AuthGoogleContext } from "../../../contexts/authGoogle";
 
 import CentroHistorico from "../../CssPages/Images/pontos/centro-historico.jpg"
 import JardimBotanico from "../../CssPages/Images/pontos/jardim-botanico.jpg"
@@ -29,6 +33,77 @@ import ShopPalladium from "../../CssPages/Images/pontos/shop-palladium.jpg"
 function Ponto(page){
 
     var Imagem; var NomeLugar; var Local;
+
+
+
+    const [name, setName] = useState("")
+    const [avaliacao, setAvaliacao] = useState("")
+    const [users, setUsers] = useState([])
+    
+    const {user} = useContext(AuthGoogleContext);
+    let userLogado = JSON.parse(user);
+
+
+    const db = getFirestore(app);
+    const userCollectionRef = collection(db, 'avaliacao');
+
+    async function avaliar() {
+        setName(userLogado.displayName);
+        setAvaliacao("1")
+        const user = await addDoc(userCollectionRef, {
+            name,
+            avaliacao,
+        });
+    }
+
+    async function deletar(id) {
+        const userDoc = doc(db, 'avaliacao', id);
+        await deleteDoc(userDoc);
+    }
+
+    async function avaliar2() {
+        setName(userLogado.displayName);
+        setAvaliacao("2")
+        const user = await addDoc(userCollectionRef, {
+            name,
+            avaliacao,
+        });
+    }
+
+    async function avaliar3() {
+        setName(userLogado.displayName);
+        setAvaliacao("3")
+        const user = await addDoc(userCollectionRef, {
+            name,
+            avaliacao,
+        });
+    }
+
+    async function avaliar4() {
+        setName(userLogado.displayName);
+        setAvaliacao("4")
+        const user = await addDoc(userCollectionRef, {
+            name,
+            avaliacao,
+        });
+    }
+
+    async function avaliar5() {
+        setName(userLogado.displayName);
+        setAvaliacao("5")
+        const user = await addDoc(userCollectionRef, {
+            name,
+            avaliacao,
+        });
+    }
+
+    useEffect(()=>{
+        const getUsers = async () => {
+            const data = await getDocs(userCollectionRef);
+            setUsers(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));
+        };
+        getUsers();
+    });
 
     const divPageImage = {
         width: "100%",
@@ -190,9 +265,35 @@ function Ponto(page){
             <div className="starsArea" style={textSobre}>
                 <div style={avaliarArea}>
                     <h2><FontAwesomeIcon icon={estrelaCheia} /> VISITOU? AVALIE! <FontAwesomeIcon icon={estrelaCheia} /></h2>
-                    <p>
-                    <FontAwesomeIcon icon={estrelaCheia} /><FontAwesomeIcon icon={estrelaCheia} /><FontAwesomeIcon icon={estrelaCheia} /><FontAwesomeIcon icon={estrelaVazia} /><FontAwesomeIcon icon={estrelaVazia} />
-                    </p>
+                    <button onClick={avaliar}>
+                        <FontAwesomeIcon icon={estrelaCheia} />
+                    </button>
+                    <button onClick={avaliar2}>
+                        <FontAwesomeIcon icon={estrelaCheia} />
+                    </button>
+                    <button onClick={avaliar3}>
+                        <FontAwesomeIcon icon={estrelaCheia} />
+                    </button>
+                    <button onClick={avaliar4}>
+                        <FontAwesomeIcon icon={estrelaCheia} />
+                    </button>
+                    <button onClick={avaliar5}>
+                        <FontAwesomeIcon icon={estrelaCheia} />
+                    </button>
+                    <div>
+                        <ul>
+                            {users.map((user) => {
+                                return (
+                                    <div key={user.id}>
+                                        <li>
+                                            {user.name}, {user.avaliacao} 
+                                        </li>
+                                        <button onClick={()=> deletar(user.id)}>Deletar</button>
+                                    </div>
+                                )
+                            })}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

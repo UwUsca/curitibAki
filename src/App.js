@@ -1,15 +1,16 @@
 import React from "react";
-import Rotas from "./rotas";
+import Rotas from "./routes/routes";
 import changeTheme from "./components/darkmode";
+import { AuthGoogleProvider } from "./contexts/authGoogle";
 
-function App() {
-  document.title ="CuritibAki";
+export const App = () => {
+  document.title = "CuritibAki";
   return (
     <div className="App">
-      <Rotas/>
+      <AuthGoogleProvider>
+        <Rotas />
+      </AuthGoogleProvider>
       {changeTheme()}
     </div>
   );
-}
-
-export default App;
+};
