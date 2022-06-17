@@ -1,0 +1,98 @@
+html {height: 100%;}body {height: 100%;}
+div#root {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap:10px
+}div.app {height: 100%;}
+body {
+    margin: 0%;
+    background-color: #121212;
+    /*Modo claro: #f2f3f4; Modo escuro: #121212;*/
+}
+@font-face {
+    font-family: fontCards;
+    src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: fontTextPontos;
+    src: url(Arvo-Regular.ttf);
+}
+
+.divBackground {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4em;
+}
+#logoIndex{
+    width: fit-content;
+    height: auto;
+    text-align: center;
+    max-height: 300px;
+}
+#logoIndex img{
+    width: auto;
+    height: auto;
+    max-height: 152px;
+    max-width: 575px;
+    transition: transform 0.1s ease-in-out;
+    cursor: pointer;
+}
+#logoIndex:hover img{
+    transform: scale(1.05);
+}
+.divButtonsArea {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.divButtons {
+    height: 13.75em;
+    width: 47em;
+    background-image: linear-gradient(45deg, #2663E5 50%, #2B26C1 50%);
+    /*Modo escuro: 2663E5 2B26C1 | Modo Claro: 24e463 2cc424*/
+    border-radius: 10px;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.divButtons img {
+    width: 736px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 80%;
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+.divButtons:hover img {
+    opacity: 40%;
+    transform: scale(1.1);   
+}
+#buttonHospital {
+    object-position: 0 0;
+}
+.divText {
+    font-size: 70px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: fontCards;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
