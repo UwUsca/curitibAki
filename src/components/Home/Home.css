@@ -1,0 +1,121 @@
+body {
+    margin: 0%;
+    background-color: #121212;
+    /*Modo claro: #f2f3f4; Modo escuro: #121212;*/
+}
+
+@font-face {
+    font-family: fontCards;
+    src: url(BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: fontTextPontos;
+    src: url(Arvo-Regular.ttf);
+}
+
+#divThemes {
+    width: 10%;
+    max-width: 75px;
+    height: 10%;
+    max-height: 75px;
+    font-size: 75px;
+    margin: 10px 10px 0px 10px;
+
+    cursor: pointer;
+    color: white;
+    float: right;
+}
+
+.divBackground {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divLogo,
+#logoIndex {
+    width: fit-content;
+    height: 20%;
+    text-align: center;
+    max-height: 300px;
+}
+
+.divLogo img,
+#logoIndex img {
+    width: auto;
+    height: auto;
+    max-height: 90%;
+    max-width: 90%;
+}
+
+.aText {
+    width: 100%;
+    font-size: 70px;
+    text-align: center;
+    font-family: fontCards;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.divButtonsArea {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.divButtons {
+    height: 40%;
+    width: 40%;
+    background-image: linear-gradient(45deg, #2663E5 50%, #2B26C1 50%);
+    /*Modo escuro: 2663E5 2B26C1 | Modo Claro: 24e463 2cc424*/
+    border-radius: 10px;
+    float: left;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.divButtons img {
+    width: 98%;
+    height: 98%;
+    position: absolute;
+    object-fit: cover;
+    border-radius: 10px;
+    opacity: 80%;
+}
+
+.divButtons:hover img {
+    opacity: 40%;
+}
+
+#buttonHospital {
+    object-position: 20% 0;
+}
+
+.divText {
+    font-size: 70px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: fontCards;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
