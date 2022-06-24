@@ -1,0 +1,397 @@
+@import 'globals';
+
+/* inputs - início
+/* ******************************************** */
+
+.inputs {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.inputs .input:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.inputs--in-row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.inputs--in-row > .input:not(:last-child) {
+  margin-right: 14px;
+  margin-bottom: 0;
+}
+
+.inputs--no-margin .input {
+  margin-bottom: 0;
+}
+
+/* inputs - fim
+/* ******************************************** */
+
+
+/* input - início
+/* ******************************************** */
+
+.input {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+}
+
+.input input,
+.input textarea,
+.input select {
+  display: block;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.input--full {
+  width: 100%;
+}
+
+.input--w1 {
+  width: 100px;
+}
+
+.input--w1-q1 {
+  width: 125px;
+}
+
+.input--w1-q2 {
+  width: 150px;
+}
+
+.input--w1-q3 {
+  width: 175px;
+}
+
+.input--w2 {
+  width: 200px;
+}
+
+.input--w2-q1 {
+  width: 225px;
+}
+
+.input--w2-q2 {
+  width: 250px;
+}
+
+.input--w2-q3 {
+  width: 275px;
+}
+
+.input--w3 {
+  width: 300px;
+}
+
+.input--w3-q1 {
+  width: 325px;
+}
+
+.input--w3-q2 {
+  width: 350px;
+}
+
+.input--w3-q3 {
+  width: 375px;
+}
+
+.input--w4 {
+  width: 400px;
+}
+
+.input--w4-q1 {
+  width: 425px;
+}
+
+.input--w4-q2 {
+  width: 450px;
+}
+
+.input--w4-q3 {
+  width: 475px;
+}
+
+.input--w5 {
+  width: 500px;
+}
+
+.input--w5-q1 {
+  width: 525px;
+}
+
+.input--w5-q2 {
+  width: 550px;
+}
+
+.input--w5-q3 {
+  width: 575px;
+}
+
+.input--w6 {
+  width: 600px;
+}
+
+.input--w6-q1 {
+  width: 625px;
+}
+
+.input--w6-q2 {
+  width: 650px;
+}
+
+.input--w6-q3 {
+  width: 675px;
+}
+
+.input--w7 {
+  width: 700px;
+}
+
+.input--w7-q1 {
+  width: 725px;
+}
+
+.input--w7-q2 {
+  width: 750px;
+}
+
+.input--w7-q3 {
+  width: 775px;
+}
+
+.input--w8 {
+  width: 800px;
+}
+
+.input--w8-q1 {
+  width: 825px;
+}
+
+.input--w8-q2 {
+  width: 850px;
+}
+
+.input--w8-q3 {
+  width: 875px;
+}
+
+.input__container {
+  position: relative;
+  width: 100%;
+}
+
+/* input - fim
+/* ******************************************** */
+
+
+/* multi-input - início
+/* ******************************************** */
+
+.multi-input {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.multi-input--full {
+  width: 100%;
+}
+
+.multi-input .input--half {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.multi-input .input {
+  margin-bottom: 14px;
+}
+
+@media only screen and (min-width: 979px) {
+  .multi-input {
+    flex-flow: row nowrap;
+  }
+
+  .multi-input .input--half {
+    width: calc(50% - 10px);
+  }
+
+  .multi-input .input:last-child {
+    margin-bottom: initial;
+  }
+
+  .multi-input .input:not(:last-child) {
+    margin-right: 14px;
+    margin-bottom: 14px;
+  }
+}
+
+/* multi-input - fim
+/* ******************************************** */
+
+
+/* inputs--style-1 - início
+/* ******************************************** */
+
+.inputs--style-1 label {
+  display: none;
+}
+
+.inputs--style-1 input {
+  display: block;
+  padding: 14px;
+  width: calc(100% - 28px);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-color: rgb(229, 229, 234);
+  font-size: 16px;
+  outline: none;
+}
+
+.inputs--style-1 input:focus {
+  border-color: rgb(209, 209, 214);
+}
+
+/* inputs--style-1 - fim
+/* ******************************************** */
+
+
+/* inputs--style-2 - início
+/* ******************************************** */
+
+.inputs--style-2 label {
+  margin-left: 0;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.inputs--style-2 .input__container {}
+
+.inputs--style-2 .input__container input {
+  padding: 12px 12px;
+  width: calc(100% - 24px);
+  border-radius: 8px;
+  background-color: $colorJet;
+  border: 1px solid $colorRaisinBlack2;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 100ms ease;
+}
+
+.inputs--style-2 .input__container textarea {
+  padding: 12px 12px;
+  width: calc(100% - 24px);
+  min-height: 100px;
+  border-radius: 8px;
+  background-color: $colorJet;
+  border: 1px solid $colorRaisinBlack2;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 100ms ease;
+}
+
+.inputs--style-2 .input__container select {
+  padding: 10px 12px;
+  width: calc(100% - 24px);
+  border-radius: 8px;
+  background-color: $colorJet;
+  border: 1px solid $colorRaisinBlack2;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: all 100ms ease;
+  box-sizing: content-box;
+}
+
+.inputs--style-2 .input__container input:focus,
+.inputs--style-2 .input__container textarea:focus {
+  background-color: $colorJet;
+}
+
+.inputs--style-2 .input--file {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background-color: $colorJet;
+  border: 1px solid $colorRaisinBlack2;
+}
+
+.inputs--style-2 .input--file,
+.inputs--style-2 .input--file .input__container {
+  width: auto;
+}
+
+.inputs--style-2 .input--file label {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+
+.inputs--style-2 .input--file input {
+  padding: 0;
+  width: auto;
+  border: none;
+}
+
+.inputs--style-2 ::placeholder {
+  color: $colorLightGray;
+}
+
+/* inputs--style-2 - fim
+/* ******************************************** */
+
+
+/* inputs--style-3 - início
+/* ******************************************** */
+
+.inputs--style-3 label {
+  display: none;
+}
+
+.inputs--style-3 input {
+  display: block;
+  padding: 14px;
+  width: calc(100% - 28px);
+  border-radius: 10px;
+  border: 1px solid $colorPlatinum;
+  background-color: $colorWhite;
+  font-size: 15px;
+  outline: none;
+}
+
+.inputs--style-3 input:focus {
+  border-color: $colorLightGray;
+}
+
+.inputs--style-3 .input__required {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: #D1D1D6;
+  font-size: 10px;
+}
+
+
+.inputs--style-3 .input--select .input__required {
+  right: 46px;
+}
+
+/* inputs--style-3 - fim
+/* ******************************************** */
